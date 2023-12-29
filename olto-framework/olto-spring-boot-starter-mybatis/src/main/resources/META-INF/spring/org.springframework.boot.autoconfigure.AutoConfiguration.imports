@@ -1,0 +1,2 @@
+com.oltocoder.boot.framework.datasource.config.OltoDataSourceAutoConfiguration
+com.oltocoder.boot.framework.mybatis.config.OltoMybatisAutoConfiguration

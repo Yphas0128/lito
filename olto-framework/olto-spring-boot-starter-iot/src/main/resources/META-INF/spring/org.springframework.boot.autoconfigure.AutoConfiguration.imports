@@ -1,0 +1,3 @@
+com.oltocoder.boot.framework.iot.config.YuDaoIotAutoConfiguration
+com.oltocoder.boot.framework.iot.config.CollectorConfiguration
+com.oltocoder.boot.framework.iot.accessplatform.config.YuDaoIotAccessPlatformAutoConfiguration

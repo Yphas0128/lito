@@ -1,0 +1,80 @@
+spring:
+  main:
+    lazy-initialization: true # 开启懒加载，加快速度
+    banner-mode: off # 单元测试，禁用 Banner
+
+--- #################### 数据库相关配置 ####################
+
+spring:
+  datasource:
+    name: edge-pro
+    url: jdbc:mysql://127.0.0.1:3306/edge-pro?allowMultiQueries=true&useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&autoReconnect=true&nullCatalogMeansCurrent=true # MySQL Connector/J 8.X 连接的示例
+    #          url: jdbc:mysql://127.0.0.1:3306/${spring.datasource.dynamic.datasource.master.name}?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=CTT # MySQL Connector/J 5.X 连接的示例
+    #          url: jdbc:postgresql://127.0.0.1:5432/${spring.datasource.dynamic.datasource.slave.name} # PostgreSQL 连接的示例
+    #          url: jdbc:oracle:thin:@127.0.0.1:1521:xe # Oracle 连接的示例
+    #          url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=${spring.datasource.dynamic.datasource.master.name} # SQLServer 连接的示例
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    druid:
+      async-init: true # 单元测试，异步初始化 Druid 连接池，提升启动速度
+      initial-size: 1 # 单元测试，配置为 1，提升启动速度
+#  datasource:
+#    name: ruoyi-vue-pro  # 数据源配置项
+#
+#    url: jdbc:h2:mem:testdb;MODE=MYSQL;DATABASE_TO_UPPER=false;NON_KEYWORDS=value; # MODE 使用 MySQL 模式；DATABASE_TO_UPPER 配置表和字段使用小写
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+#    druid:
+#      async-init: true # 单元测试，异步初始化 Druid 连接池，提升启动速度
+#      initial-size: 1 # 单元测试，配置为 1，提升启动速度
+#  sql:
+#    init:
+#      schema-locations: classpath:/sql/create_tables.sql
+
+  # Redis 配置。Redisson 默认的配置足够使用，一般不需要进行调优
+  redis:
+    host: 127.0.0.1 # 地址
+    port: 16379 # 端口（单元测试，使用 16379 端口）
+    database: 0 # 数据库索引
+
+
+mybatis:
+  lazy-initialization: true # 单元测试，设置 MyBatis Mapper 延迟加载，加速每个单元测试
+
+--- #################### 定时任务相关配置 ####################
+
+--- #################### 配置中心相关配置 ####################
+
+--- #################### 服务保障相关配置 ####################
+
+# Lock4j 配置项（单元测试，禁用 Lock4j）
+
+# Resilience4j 配置项
+
+--- #################### 监控相关配置 ####################
+
+--- #################### 芋道相关配置 ####################
+
+# 芋道配置项，设置当前项目所有自定义的配置
+olto:
+  info:
+    base-package: com.oltocoder.boot.module
+  captcha:
+    timeout: 5m
+    width: 160
+    height: 60
+    enable: true
+  iot:
+    access-platforms:
+      access01:
+        access_platform_name: iita
+        access_component_name: "iitaplatformaccesscomponent"
+        mqtt-server:
+          host: "172.17.194.56"
+          port: 1883
+        extra-properties:
+          product-key: "openiitagateway01"
+          product-secret: "openiitasecret01"
+          device-name: "202308251710"

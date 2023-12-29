@@ -1,0 +1,6 @@
+com.oltocoder.boot.framework.apilog.config.OltoApiLogAutoConfiguration
+com.oltocoder.boot.framework.jackson.config.OltoJacksonAutoConfiguration
+com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration
+com.oltocoder.boot.framework.swagger.config.OltoSwaggerAutoConfiguration
+com.oltocoder.boot.framework.web.config.OltoWebAutoConfiguration
+com.oltocoder.boot.framework.xss.config.OltoXssAutoConfiguration

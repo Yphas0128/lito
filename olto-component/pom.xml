@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>olto</artifactId>
+        <groupId>com.oltocoder.boot</groupId>
+        <version>${revision}</version>
+    </parent>
+    <packaging>pom</packaging>
+    <modules>
+        <module>olto-component-core</module>
+        <module>olto-component-test</module>
+        <module>olto-component-engine</module>
+        <module>olto-component-bus</module>
+        <module>olto-component-trace</module>
+    </modules>
+
+    <artifactId>olto-component</artifactId>
+    <description>
+        组件
+    </description>
+    <url></url>
+</project>

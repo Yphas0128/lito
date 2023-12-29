@@ -1,0 +1,2 @@
+com.oltocoder.boot.framework.tracer.config.OltoTracerAutoConfiguration
+com.oltocoder.boot.framework.tracer.config.OltoMetricsAutoConfiguration

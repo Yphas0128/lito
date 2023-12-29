@@ -1,0 +1,2 @@
+com.oltocoder.boot.framework.redis.config.OltoRedisAutoConfiguration
+com.oltocoder.boot.framework.redis.config.OltoCacheAutoConfiguration

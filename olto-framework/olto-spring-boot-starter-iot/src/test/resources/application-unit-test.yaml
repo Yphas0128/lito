@@ -1,0 +1,16 @@
+
+olto:
+  iot:
+    access-platforms:
+      access01:
+        access_platform_name: iita
+        access_component_name: "iitaplatformaccesscomponent"
+        mqtt-server:
+          host: "172.17.194.56"
+          port: 1883
+        extra-properties:
+          product-key: "openiitagateway01"
+          product-secret: "openiitasecret01"
+          device-name: "202308251710"
+
+

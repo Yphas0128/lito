@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>olto-component</artifactId>
+        <groupId>com.oltocoder.boot</groupId>
+        <version>${revision}</version>
+    </parent>
+
+    <artifactId>olto-component-test</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>Banner 用于在 console 控制台，打印开发文档、接口文档等</description>
+    <url></url>
+
+</project>
